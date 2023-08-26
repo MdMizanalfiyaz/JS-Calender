@@ -1,0 +1,17 @@
+var monthName = "May, 2023";
+var days = 31;
+var startingDay = 1;
+
+console.log("\n\nCalender Of", monthName, "\n");
+console.log("sun   mon   tue   wed   thu   fri   sat");
+
+for (var i=0;i<5;i++){
+    var dayRow = "";
+    for (var j=1;j<=7;j++){
+        var currentDay = 7*i + j - startingDay;
+
+        if(currentDay>days){
+        	break;
+        } else if (currentDay < 1){
+            currentDay = " ";
+        }
